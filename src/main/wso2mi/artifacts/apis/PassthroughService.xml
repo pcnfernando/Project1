@@ -1,0 +1,8 @@
+<api xmlns="http://ws.apache.org/ns/synapse" name="PassthroughService" context="/passthrough">
+    <resource methods="POST" uri-template="/convert">
+        <inSequence>
+            <property name="messageType" value="application/json" scope="axis2"/>
+            <respond/>
+        </inSequence>
+    </resource>
+</api>
